@@ -1,0 +1,116 @@
+/* Estilo General */
+/* Se establecen estilos globales para la página web: 
+   - Fuente personalizada (Press Start 2P) para todo el texto.
+   - Color de fondo oscuro (#1c1c1c) y texto claro (#f0f0f0) para mejor contraste.
+   - Eliminación de márgenes y rellenos predeterminados. */
+   body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de navegación */
+/* Estilo para la barra de navegación:
+   - Fondo oscuro para el navbar.
+   - Personalización del logo y los enlaces del menú. */
+.navbar {
+    background-color: #111; /* Fondo muy oscuro para la barra de navegación. */
+}
+
+.navbar .navbar-brand {
+    color: #00f900 !important; /* Color verde brillante para destacar el logo. */
+    font-size: 2rem; /* Tamaño de fuente grande para el logo. */
+    font-weight: bold; /* Texto en negrita para mayor énfasis. */
+}
+
+.navbar .nav-link {
+    color: #ffffff !important; /* Texto blanco para los enlaces. */
+    margin-right: 15px; /* Espaciado entre los enlaces. */
+    text-decoration: none !important; /* Elimina el subrayado en los enlaces. */
+    transition: color 0.3s; /* Añade una transición suave para el cambio de color al pasar el mouse. */
+}
+
+.navbar .nav-link:hover {
+    color: #00bee4 !important; /* Color azul claro al pasar el mouse. */
+    text-decoration: underline; /* Agrega subrayado al pasar el mouse. */
+}
+
+/* Sección principal/hero */
+/* Estilos para la sección hero:
+   - Fondo gris oscuro (#333) y color de texto claro.
+   - Personalización de botones principales con colores llamativos. */
+.hero {
+    background-color: #333; /* Fondo gris oscuro para la sección hero. */
+    padding: 60px 0; /* Espaciado superior e inferior amplio. */
+    color: #f0f0f0; /* Texto claro para contrastar con el fondo. */
+}
+
+.hero .btn-primary {
+    background-color: #04A5CF; /* Fondo azul llamativo para el botón. */
+    border-color: #ffffff; /* Bordes blancos para destacar el botón. */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Fuente diferente para el botón. */
+    font-size: x-large; /* Tamaño grande para resaltar el botón. */
+}
+
+.hero .btn-primary:hover {
+    background-color: #017996; /* Azul más oscuro al pasar el mouse. */
+    border-color: #ffffff; /* Mantiene los bordes blancos. */
+}
+
+/* Productos (Juegos) */
+/* Estilos para las tarjetas de productos:
+   - Fondo oscuro para las tarjetas.
+   - Diseño visual atractivo con bordes redondeados y efectos de zoom en imágenes. */
+.productos .card {
+    background-color: #222; /* Fondo gris oscuro para las tarjetas. */
+    border: none; /* Elimina los bordes predeterminados. */
+    margin-bottom: 20px; /* Espaciado inferior entre tarjetas. */
+    border-radius: 10px; /* Bordes redondeados. */
+    overflow: hidden; /* Evita que los elementos sobresalgan de la tarjeta. */
+}
+
+.productos .card-img-top {
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior. */
+    transition: transform 0.3s ease-in-out; /* Añade un efecto suave de transición para el zoom. */
+}
+
+.productos .card-img-top:hover {
+    transform: scale(1.02); /* Aumenta ligeramente el tamaño de la imagen al pasar el mouse. */
+}
+
+.productos .card-title {
+    text-align: left; /* Alineación del texto a la izquierda. */
+    color: #04A5CF; /* Color azul llamativo para los títulos. */
+    font-size: 1.5rem; /* Tamaño de fuente moderado para destacar los títulos. */
+}
+
+.productos .card-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Fuente personalizada para el texto descriptivo. */
+}
+
+.productos .btn-success {
+    width: 100%; /* Botón ocupa todo el ancho de la tarjeta. */
+    background-color: #715dc9; /* Fondo morado para los botones de compra. */
+    border-color: #f0f0f0; /* Bordes claros para contraste. */
+    color: #ffffff; /* Texto blanco para visibilidad. */
+}
+
+.productos .btn-success:hover {
+    background-color: #544595; /* Morado más oscuro al pasar el mouse. */
+    border-color: #ffffff; /* Mantiene bordes claros. */
+}
+
+/* Pie de página */
+/* Estilos para el pie de página:
+   - Fondo oscuro para mantener el diseño consistente.
+   - Texto pequeño y claro para los créditos. */
+footer {
+    background-color: #111; /* Fondo oscuro para el pie de página. */
+}
+
+footer p {
+    color: #fff; /* Texto blanco para contraste. */
+    font-size: 0.8rem; /* Tamaño de fuente reducido para los créditos. */
+}

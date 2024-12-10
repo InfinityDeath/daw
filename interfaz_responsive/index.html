@@ -1,0 +1,116 @@
+<!-- Definimos el documento como HTML y especificamos el idioma como español -->
+<!DOCTYPE html>
+<html lang="es">
+
+  <!-- Información meta y recursos externos -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajuste del contenido al ancho del dispositivo, haciendo que la página sea responsiva -->
+    <title>IGameShop</title> <!-- Título que aparecerá en la pestaña del navegador -->
+
+    <!-- Vinculación de Bootstrap CSS versión 5.3.0: -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Vinculación al archivo CSS -->
+    <link href="/assets/css/styles.css" rel="stylesheet">
+
+    <!-- Vinculación de una fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Contenido del cuerpo de la página -->
+    <header>
+      <!-- Barra de navegación -->
+      <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Usamos clases de Bootstrap para un diseño responsivo y estilos oscuros -->
+        <div class="container"> <!-- Creamos un contenedor de bootstrapp para alinear y centrar el contenido -->
+          <a class="navbar-brand" href="#">IGameShop</a> <!-- Nombre de la tienda -->
+          
+          <!-- Botón de alternancia para dispositivos móviles: -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav"> <!-- Contenedor para los elementos del menú de navegación -->
+            <ul class="navbar-nav ms-auto"> <!-- Lista de enlaces alineados a la derecha (clase `ms-auto`) -->
+              <!-- Enlace a la página de inicio: -->
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Inicio</a>
+              </li>
+              <!-- Enlace a la página de Juegos: -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Juegos</a>
+              </li>
+              <!-- Enlace a la página de Ofertas: -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ofertas</a>
+              </li>
+              <!-- Enlace a la página de Contacto: -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Sección principal o "hero" -->
+    <section class="hero text-center text-light"> <!-- Se centra el texto con colores claros usando Boostrap -->
+      <div class="container">
+        <h1 class="display-4">Bienvenidos a IGameShop</h1> <!-- Título grande para dar la bienvenida a la página -->
+        <p class="lead">El destino ideal para comprar videojuegos</p> <!-- Párrafo que complementa al título -->
+        <a href="#" class="btn btn-primary btn-lg">Explorar Juegos</a> <!-- Botón de acción que llevaría al apartado de Juegos -->
+      </div>
+    </section>
+
+    <!-- Sección para mostrar los productos, que en este caso son videojuegos -->
+    <section class="productos py-5"> <!-- Se crea la sección con un espaciado vertical de 5 usando una clase de Bootstrap -->
+      <div class="container">
+        <div class="row"> <!-- Uso de Bootstrap para diseño de cuadrícula -->
+          <article class="col-12 col-md-4 mb-4"> <!-- Definimos que cada producto ocupa una columna responsiva (4 columnas en pantallas medianas) -->
+            <div class="card"> <!-- Contenedor estilo "tarjeta" de Bootstrap -->
+              <img src="/assets/img/stray-game.jpg" class="card-img-top" alt="Imagen del juego Stray"> <!-- Imagen del juego-->
+              <div class="card-body"> <!-- Contenedor que contiene la información del juego como título, descripción y el botón de compra -->
+                <h5 class="card-title">Stray</h5> <!-- Título del juego-->
+                <!-- Descripción del juego: -->
+                <p class="card-text">Perdido, solo y separado de su familia, un gato callejero debe desentrañar un antiguo misterio para escapar de una ciudad cyberpunk olvidada.</p>
+                <a href="#" class="btn btn-success">Comprar</a> <!-- Botón para comprar el juego -->
+              </div>
+            </div>
+          </article>
+          <!-- Repetimos la misma estructura anterior, pero con información de otro juego: -->
+          <article class="col-12 col-md-4 mb-4">
+            <div class="card">
+              <img src="/assets/img/palworld-game.jpg" class="card-img-top" alt="Imagen del juego Palworld">
+              <div class="card-body">
+                <h5 class="card-title">Palworld</h5>
+                <p class="card-text">Lucha, cultiva, construye y trabaja junto a misteriosas criaturas llamadas «Pals» en este nuevo juego multijugador de supervivencia y artesanía en mundo abierto.</p>
+                <a href="#" class="btn btn-success">Comprar</a>
+              </div>
+            </div>
+          </article>
+          <!-- Repetimos la misma estructura anterior, pero con información de otro juego: -->
+          <article class="col-12 col-md-4 mb-4">
+            <div class="card">
+              <img src="/assets/img/raft-game.jpg" class="card-img-top" alt="Imagen del juego">
+              <div class="card-body">
+                <h5 class="card-title">Raft</h5>
+                <p class="card-text">Raft te lanza a ti y a tus amigos a una aventura épica en alta mar, con el objetivo de sobrevivir, reunir recursos y construir un hogar flotante digno de sobrevivir.</p>
+                <a href="#" class="btn btn-success">Comprar</a>
+              </div>
+            </div>
+          </article>
+        </div>  
+      </div>
+    </section>
+    <!-- Pie de página: -->
+    <footer class="text-center text-light py-4"> <!-- Pie de página con texto centrado, color claro y relleno vertical utilizando clases de Bootstrap -->
+      <p>&copy; 2024 IGameShop. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Vinculación de Bootstrap JS para funcionalidades interactivas: -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+</html>
